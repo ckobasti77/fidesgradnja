@@ -13,7 +13,7 @@ const Navlinks = ({ showNav, scrollToTop }) => {
 
   return (
     <>
-      <div className={`navlinks gap-6 hidden xl:flex bg-transparent font-light tracking-wider`}>
+      <div className={`navlinks gap-6 hidden xl:flex bg-transparent font-normal tracking-wide`}>
         <Link
           className={`hover:text-primary duration-100 offset ${lastSegment === '' ? 'text-primary' : 'text-third'} transition-all delay-[.1s] duration-50 ease-in-out transform`}
           to="/"

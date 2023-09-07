@@ -45,7 +45,10 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
       <Link
         className={`${lastSegment === "onama" ? "text-primary" : "text-third"}`}
         to="/onama"
-        onClick={() => setNavOpen(false)}
+        onClick={() => {
+          setNavOpen(false)
+          scrollToTop()
+        }}
       >
         {language === "SRB"
           ? `${languages.navigacija.links.second}`
@@ -54,7 +57,10 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
       <Link
         className={`${lastSegment === "galerija" ? "text-primary" : "text-third"}`}
         to="/galerija"
-        onClick={() => setNavOpen(false)}
+        onClick={() => {
+          setNavOpen(false)
+          scrollToTop()
+        }}
       >
         {language === "SRB"
           ? `${languages.navigacija.links.third}`
@@ -63,7 +69,10 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
       <Link
         className={`${lastSegment === "nekretnine" ? "text-primary" : "text-third"}`}
         to="/nekretnine"
-        onClick={() => setNavOpen(false)}
+        onClick={() => {
+          setNavOpen(false)
+          scrollToTop()
+        }}
       >
         {language === "SRB"
           ? `${languages.navigacija.links.fourth}`
@@ -72,7 +81,10 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
       <Link
         className={`${lastSegment === "kontakt" ? "text-primary" : "text-third"}`}
         to="/kontakt"
-        onClick={() => setNavOpen(false)}
+        onClick={() => {
+          setNavOpen(false)
+          scrollToTop()
+        }}
       >
         {language === "SRB"
           ? `${languages.navigacija.links.fifth}`
@@ -80,7 +92,6 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
       </Link>
       <div className="w-full flex xl:hidden items-center gap-4 justify-center">
         <Social />
-        <Language />
       </div>
     </div>
   );

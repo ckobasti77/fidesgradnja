@@ -3,7 +3,7 @@ import Context from "../context/Context";
 import { BiWorld } from "react-icons/bi";
 import { srb, eng } from "../assets/assets";
 
-const Language = () => {
+const Language = ({ classSingle }) => {
   const { language, setLanguage } = useContext(Context);
 
   return (
@@ -12,7 +12,7 @@ const Language = () => {
         tabIndex={0}
         className="flex items-center gap-x-1 cursor-pointer duration-150 opacity-[.85] hover:opacity-100"
       >
-        <span className="translate-y-[3px] xl:translate-y-0 -translate-x-5 xl:-translate-x-0 zastava">
+        <span className={`translate-y-[3px] xl:translate-y-0 -translate-x-5 xl:-translate-x-0 zastava`}>
           {
             language === 'SRB'
               ? <span><img src={srb} alt="srb" /></span>

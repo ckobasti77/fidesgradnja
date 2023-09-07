@@ -12,7 +12,7 @@
   --fifth: #343334;
   --sixth: #a6adba;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;}
 
 body {
   font-family: 'Raleway', sans-serif;

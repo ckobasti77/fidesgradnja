@@ -9,14 +9,14 @@ const Header = () => {
   const { language, setLanguage } = useContext(Context);
 
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen text-third overflow-hidden">
       <Parallax
         translateY={[-40, 40]}
         className="hero min-h-screen bg-[url(/./parallax3.avif)] bg-top"
       >
         <div className="header-overlay h-full w-full bg-opacity-60"></div>
         <div className="header-overlay2 h-full w-full"></div>
-        <div className="hero-content text-center text-neutral-content">
+        <div className="hero-content p-0 text-center text-neutral-content">
           <div className="max-w-xl space-y-8">
             <h1
               className="mb-5 mx-8 text-5xl font-bold text-third"
@@ -39,7 +39,7 @@ const Header = () => {
               </span>
             </h1>
             <h2
-              className="mb-5 text-3xl font-bold text-third"
+              className="mb-5 text-3xl px-5 font-bold text-third"
               data-aos="fade-up"
               data-aos-once
               data-aos-delay="1200"

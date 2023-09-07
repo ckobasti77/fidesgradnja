@@ -8,8 +8,8 @@ import { Parallax } from "react-scroll-parallax";
 const HomeSection = () => {
   const { language } = useContext(Context);
   return (
-    <div className="2xl:mx-48 3xl:mx-80">
-      <h3 className="text-3xl text-center pt-24">
+    <div className="2xl:mx-48 3xl:mx-80 px-4">
+      <h3 className="text-3xl text-center text-third pt-24">
         {language === "SRB"
           ? `${languages.pocetna.secondSection.heading}`
           : `${languages.home.secondSection.heading}`}
@@ -27,13 +27,13 @@ const HomeSection = () => {
             data-aos-delay="200"
           />
           <div
-            className="outer w-[170px] h-[170px] absolute -bottom-[2%] -right-[10%] rounded-full p-[4px]"
+            className="outer w-[170px] h-[170px] absolute -bottom-[2%] -right-0 xl:-right-[10%] rounded-full p-[4px]"
             data-aos="fade-up"
             data-aos-delay="600"
           >
             <span className=" inline-flex flex-col items-center justify-between bg-fifth rounded-full p-8 w-full h-full text-sm font-semibold">
-              <img src={homeSectionIcon} alt="homeSectionIcon" className="" />
-              <span className="whitespace-nowrap">
+              <img src={homeSectionIcon} alt="homeSectionIcon" />
+              <span className="whitespace-nowrap text-third">
                 {language === "SRB"
                   ? `${languages.pocetna.secondSection.absolute}`
                   : `${languages.home.secondSection.absolute}`}
@@ -41,7 +41,7 @@ const HomeSection = () => {
             </span>
           </div>
         </figure>
-        <div className="my-auto w-full xl:w-3/6 flex flex-col items-center gap-y-8">
+        <div className="my-auto w-full xl:w-3/6 flex flex-col items-center text-third gap-y-8">
           <div
             className="outer rounded-2xl p-[3px]"
             data-aos="fade-up"
@@ -72,7 +72,7 @@ const HomeSection = () => {
           </div>
         </div>
       </div>
-      <h3 className="text-3xl text-center pb-24">
+      <h3 className="text-2xl text-third xl:text-3xl text-center pb-24">
         {language === "SRB"
           ? `${languages.pocetna.secondSection.heading2}`
           : `${languages.home.secondSection.heading2}`}

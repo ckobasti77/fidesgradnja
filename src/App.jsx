@@ -52,7 +52,7 @@ function App() {
 
 
   return (
-    <>
+    <div className="w-[100vw]">
       <Routes>
         <Route path="/" element={<SharedLayout scrollToTop={scrollToTop} />}>
           <Route index element={<Home />} />
@@ -80,7 +80,7 @@ function App() {
           <BsChevronBarUp className="scale-[1.75] text-gradient" />
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

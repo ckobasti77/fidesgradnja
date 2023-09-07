@@ -66,6 +66,7 @@ import new3 from "./new/new3.avif";
 import kontakt1 from './kontakt/office.png'
 import kontakt2 from './kontakt/map.png'
 import kontakt3 from './kontakt/telephone.png'
+import kontakt4 from './kontakt/gmail.png'
 
 export {
   logo,
@@ -136,5 +137,6 @@ export {
   kontakt1,
   kontakt2,
   kontakt3,
+  kontakt4,
   
 };

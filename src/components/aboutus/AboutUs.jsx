@@ -35,7 +35,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="space-y-6 xl:-space-y-32 py-32 2xl:px-48 3xl:px-80">
+    <div className="space-y-6 xl:-space-y-32 py-32 2xl:px-48 3xl:px-80 text-third">
       {sections.map((section, key) => (
         <div
           key={key}

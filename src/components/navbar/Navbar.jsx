@@ -54,8 +54,8 @@ const Navbar = ({ scrollToTop }) => {
           <Link to="/" className="font-bold" onClick={scrollToTop}>
             {
               language === 'SRB'
-              ? <img src={logoSrb} alt="logo" className={`cursor-pointer max-h-[100px] transform scale-[.67]`} />
-              : <img src={logoEng} alt="logo" className={`cursor-pointer max-h-[100px] transform scale-[.67]`} />
+              ? <img src={logoSrb} alt="logo" className={`cursor-pointer max-h-[100px] transform scale-[.5]`} />
+              : <img src={logoEng} alt="logo" className={`cursor-pointer max-h-[100px] transform scale-[.5]`} />
             }
           </Link>
         </div>
@@ -63,7 +63,7 @@ const Navbar = ({ scrollToTop }) => {
           <Language />
         </div>
         <div className="xl:w-5/12 hidden xl:flex items-center gap-4 justify-end">
-          <Language />
+          <Language classSingle='translate-y-[0px]' />
           <Social />
         </div>
         <Burger navOpen={navOpen} toggleNav={toggleNav} />

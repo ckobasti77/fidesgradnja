@@ -17,9 +17,9 @@ const Header = () => {
         <div className="header-overlay h-full w-full bg-opacity-60"></div>
         <div className="header-overlay2 h-full w-full"></div>
         <div className="hero-content p-0 text-center text-neutral-content">
-          <div className="max-w-xl space-y-8">
+          <div className="space-y-8">
             <h1
-              className="mb-5 mx-8 text-5xl font-bold text-third"
+              className="mb-5 text-5xl font-bold text-third"
               data-aos="fade-up"
               data-aos-once
               data-aos-delay="1100"

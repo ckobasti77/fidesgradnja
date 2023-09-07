@@ -49,11 +49,6 @@ const HomeSection = () => {
           >
             <p className="bg-fifth rounded-2xl p-6 font-[600]">
               {language === "SRB"
-                ? `${languages.pocetna.secondSection.paragraph}`
-                : `${languages.home.secondSection.paragraph}`}
-              <br />
-              <br />
-              {language === "SRB"
                 ? `${languages.pocetna.secondSection.paragraph2}`
                 : `${languages.home.secondSection.paragraph2}`}
             </p>

@@ -52,8 +52,7 @@ const languages = {
       heading:
         "Naš tim je sinonim za profesionalizam i stručnost u građevinskoj industriji. Godinama, stvaramo inspirativne prostore za život, rad i igru, koji su prilagođeni svim zahtevima i specifičnostima tržišta.",
       absolute: "100+ projekata",
-      paragraph:
-        "Naš tim je sinonim za profesionalizam i stručnost u građevinskoj industriji. Godinama, stvaramo inspirativne prostore za život, rad i igru, koji su prilagođeni svim zahtevima i specifičnostima tržišta.",
+      
       paragraph2:
         "Naša posvećenost svakom projektu garantuje da će on biti izveden po najvišim standardima i kvalitetno. Svi zaposleni u Fides-u predano rade kako bi ostvarili svaku vašu viziju. Ono što nas izdvaja na tržištu jeste sposobnost da kombinujemo tradicionalni kvalitet gradnje sa inovativnim tehnikama i modernim dizajnom.",
       button: "Pređi na stranicu O nama",

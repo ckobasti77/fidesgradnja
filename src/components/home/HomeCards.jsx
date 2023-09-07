@@ -55,7 +55,7 @@ const HomeCards = () => {
       {/* <Spline className="absolute inset-0 z-10" scene="https://prod.spline.design/gwYwjpkchtvhNo9v/scene.splinecode" /> */}
       <div
         id="homecards"
-        className="2xl:mx-48 3xl:mx-80 px-4 flex space-y-12 2xl:space-y-0 z-20 flex-wrap justify-between min-h-screen items-center"
+        className="px-4 flex space-y-12 2xl:space-y-0 z-20 flex-wrap justify-between min-h-screen items-center"
       >
         <h3 className="text-2xl xl:text-3xl text-center py-24 text-third tracking-wider">
           {language === "SRB"

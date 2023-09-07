@@ -67,11 +67,6 @@ const HomeSection = () => {
           </div>
         </div>
       </div>
-      <h3 className="text-2xl text-third xl:text-3xl text-center pb-24">
-        {language === "SRB"
-          ? `${languages.pocetna.secondSection.heading2}`
-          : `${languages.home.secondSection.heading2}`}
-      </h3>
     </div>
   );
 };

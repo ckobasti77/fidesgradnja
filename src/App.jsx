@@ -14,14 +14,6 @@ function App() {
     offset: -200,
   });
 
-  const [loader, setLoader] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000);
-  }, []);
-
   const scrollToTop = () => {
     window.scroll({
       top: 0,
@@ -49,41 +41,36 @@ function App() {
     };
   }, []);
 
-
-
   return (
-    <>
-      {loader && <Loader />}
-      <div className="w-[100vw]">
-        <Routes>
-          <Route path="/" element={<SharedLayout scrollToTop={scrollToTop} />}>
-            <Route index element={<Home />} />
-            <Route path="/onama" element={<Onama />} />
-            <Route path="/galerija" element={<Galerija />} />
-            <Route
-              path="/nekretnine"
-              element={<Nekretnine scrollToTop={scrollToTop} />}
-            />
-            <Route path="/kontakt" element={<Kontakt />} />
-          </Route>
-        </Routes>
-        <div
-          className={`outer p-[3px] fixed bottom-[25px] right-[25px] md:bottom-[50px] md:right-[50px] z-[9999999] rounded-full transform transition-all duration-300${
-            showScrollToTop
-              ? "right-[50px] scale-100 opacity-100"
-              : "-right-[50px] scale-0 opacity-0"
-          }`}
+    <div className="w-[100vw]">
+      <Routes>
+        <Route path="/" element={<SharedLayout scrollToTop={scrollToTop} />}>
+          <Route index element={<Home />} />
+          <Route path="/onama" element={<Onama />} />
+          <Route path="/galerija" element={<Galerija />} />
+          <Route
+            path="/nekretnine"
+            element={<Nekretnine scrollToTop={scrollToTop} />}
+          />
+          <Route path="/kontakt" element={<Kontakt />} />
+        </Route>
+      </Routes>
+      <div
+        className={`outer p-[3px] fixed bottom-[25px] right-[25px] md:bottom-[50px] md:right-[50px] z-[9999999] rounded-full transform transition-all duration-300${
+          showScrollToTop
+            ? "right-[50px] scale-100 opacity-100"
+            : "-right-[50px] scale-0 opacity-0"
+        }`}
+      >
+        <button
+          className={`rounded-full bg-fifth scrollToTop w-[50px] h-[50px] grid place-items-center `}
+          onClick={() => scrollToTop()}
+          title="Skroluj do vrha"
         >
-          <button
-            className={`rounded-full bg-fifth scrollToTop w-[50px] h-[50px] grid place-items-center `}
-            onClick={() => scrollToTop()}
-            title="Skroluj do vrha"
-          >
-            <BsChevronBarUp className="scale-[1.75] text-gradient" />
-          </button>
-        </div>
+          <BsChevronBarUp className="scale-[1.75] text-gradient" />
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 

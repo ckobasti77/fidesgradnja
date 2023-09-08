@@ -79,6 +79,8 @@ const Hero = ({ currentBlock }) => {
         }`}
       >
         <div className="header-overlay h-full w-full bg-opacity-60"></div>
+        <div className="header-overlay2 h-full w-full"></div>
+
         {currentBlock !== 0 && (
           <div className="header-overlay3 h-full w-full"></div>
         )}

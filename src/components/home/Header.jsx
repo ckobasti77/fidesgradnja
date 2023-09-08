@@ -12,7 +12,7 @@ const Header = () => {
     <div className="min-h-screen text-third overflow-hidden">
       <Parallax
         translateY={[-40, 40]}
-        className="hero min-h-screen bg-[url(/./parallax3.avif)] bg-top"
+        className="hero min-h-screen bg-[url(/./gallery14.avif)] bg-top"
       >
         <div className="header-overlay h-full w-full bg-opacity-60"></div>
         <div className="header-overlay2 h-full w-full"></div>

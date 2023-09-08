@@ -71,7 +71,7 @@ const Hero = ({ currentBlock }) => {
     <div className="min-h-screen overflow-hidden text-third">
       <div
         className={`hero min-h-screen ${
-          currentBlock === 0 && "bg-[url(/./gallery14.avif)]"
+          currentBlock === 0 && "bg-[url(/./parallax1.avif)]"
         } ${currentBlock === 1 && "bg-[url(/./ablok.jpg)]"} ${
           currentBlock === 2 && "bg-[url(/./vozdove-kapije.jpg)]"
         } ${currentBlock === 3 && "bg-[url(/./novi-dorcol.jpg)]"} ${

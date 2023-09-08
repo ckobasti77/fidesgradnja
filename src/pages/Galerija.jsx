@@ -40,6 +40,7 @@ const grubo = [
   gallery3,
   gallery4,
   gallery11,
+  gallery12,
   gallery13,
   gallery14,
   gallery16,
@@ -47,6 +48,7 @@ const grubo = [
   gallery18,
   gallery19,
   gallery20,
+  gallery21,
   gallery22,
 ];
 
@@ -55,12 +57,13 @@ const fasade = [
   gallery6,
   gallery7,
   gallery8,
+  gallery9,
   gallery10,
+  gallery15,
   gallery23,
   gallery24,
 ];
 
-const treca = [gallery9, gallery12, gallery15, gallery21];
 
 const Galerija = () => {
   const [expandedImage, setExpandedImage] = useState(null);
@@ -141,34 +144,6 @@ const Galerija = () => {
           }}
         >
           {fasade.map((slika, index) => (
-            <SwiperSlide key={index} className="rounded-2xl h-[300px] xl:h-[400px] w-full" onClick={() => handleImageClick(slika)}>
-              <img src={slika} alt={index}  className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <Swiper
-          freeMode={true}
-          grabCursor={true}
-          modules={[FreeMode]}
-          slidesPerView={3.5}
-          spaceBetween={30}
-          className="mySwiper cursor-grab my-24"
-          breakpoints={{
-            1500: {
-                slidesPerView: 3.5
-            },
-            1024: {
-                slidesPerView: 2.5
-            },
-            768: {
-                slidesPerView: 2.5
-            },
-            320: {
-                slidesPerView: 1.5
-            }
-          }}
-        >
-          {treca.map((slika, index) => (
             <SwiperSlide key={index} className="rounded-2xl h-[300px] xl:h-[400px] w-full" onClick={() => handleImageClick(slika)}>
               <img src={slika} alt={index}  className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full" />
             </SwiperSlide>

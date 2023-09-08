@@ -140,5 +140,5 @@ export {
   kontakt3,
   kontakt4,
   kontakt5,
-  
+
 };

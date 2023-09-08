@@ -1,10 +1,11 @@
-import { logo, logo1, logoLight, logoDark } from "../assets/assets";
+import React, { useContext } from "react";
 
-const Logo = ({ height, width }) => {
+const Logo = () => {
 
   return (
-    <img src={logoLight} alt="logo" className={`cursor-pointer w-[${width}px] h-[${height}px]`} />
     
+    <>
+    </>
   );
 };
 

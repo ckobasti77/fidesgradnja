@@ -1,32 +1,10 @@
-import Spline from '@splinetool/react-spline';
+import Spline from "@splinetool/react-spline";
 
 const Loader = () => {
   return (
-    // <div className="loader-wrapper grid place-items-center h-screen w-screen bg-fourth fixed inset-0 z-[9999999999999999999999999999999999999999999999999]">
-    //   <div className="loader">
-    //     <div className="box box-1">
-    //       <div className="side-left"></div>
-    //       <div className="side-right"></div>
-    //       <div className="side-top"></div>
-    //     </div>
-    //     <div className="box box-2">
-    //       <div className="side-left"></div>
-    //       <div className="side-right"></div>
-    //       <div className="side-top"></div>
-    //     </div>
-    //     <div className="box box-3">
-    //       <div className="side-left"></div>
-    //       <div className="side-right"></div>
-    //       <div className="side-top"></div>
-    //     </div>
-    //     <div className="box box-4">
-    //       <div className="side-left"></div>
-    //       <div className="side-right"></div>
-    //       <div className="side-top"></div>
-    //     </div>
-    //   </div>
-    // </div>
-    <Spline scene="https://prod.spline.design/gwYwjpkchtvhNo9v/scene.splinecode" />
+    <div className="w-screen h-screen fixed inset-0 bg-fourth grid place-items-center z-[999999999999]">
+      <span class="loader"></span>
+    </div>
   );
 };
 

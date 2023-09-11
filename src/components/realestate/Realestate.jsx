@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-import { Hero, Blocks, Slider, Apartments, New } from "../components";
+import React from "react";
+import { Hero, New } from "../components";
 
-const Realestate = ({ scrollToTop }) => {
-  const [currentBlock, setCurrentBlock] = useState(0);
+const Realestate = () => {
 
   return (
     <>
-      <Hero currentBlock={currentBlock} />
-      {/* {currentBlock === 0 
-        ? <Blocks currentBlock={currentBlock} setCurrentBlock={setCurrentBlock} scrollToTop={scrollToTop} />
-        : <Apartments currentBlock={currentBlock} setCurrentBlock={setCurrentBlock} scrollToTop={scrollToTop}/>
-      } */}
+      <Hero />
       <New />
     </>
   );

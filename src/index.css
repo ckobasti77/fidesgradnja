@@ -38,12 +38,6 @@ body {
   background: rgba(232, 179, 15, .75);
 }
 
-
-/* .dragbar {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-} */
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .logo {
     width: 230px;
@@ -89,8 +83,6 @@ body {
   background-position: center;
 }
 
-/* Loader */
-/* 
 .loader {
   scale: 3;
   height: 50px;
@@ -309,42 +301,6 @@ body {
   }
 }
 
-Loader */
-.loader {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  position: relative;
-  animation: rotate 1s linear infinite
-}
-.loader::before , .loader::after {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  inset: 0px;
-  border-radius: 50%;
-  border: 5px solid var(--primary);
-  animation: prixClipFix 2s linear infinite ;
-}
-.loader::after{
-  border-color: var(--secondary);
-  animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
-  inset: 6px;
-}
-
-@keyframes rotate {
-  0%   {transform: rotate(0deg)}
-  100%   {transform: rotate(360deg)}
-}
-
-@keyframes prixClipFix {
-    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
-    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
-}
-
 .header-overlay {
   background: linear-gradient(180deg, rgba(35,33,35,1) 0%, rgba(35,33,35,0) 50%, rgba(35,33,35,1) 100%), radial-gradient(circle, rgba(35,33,35,0) 0%, rgba(35,33,35,.5) 100%);
 }
@@ -357,7 +313,6 @@ Loader */
 }
 
 .btn-gradient {
-  /* background: linear-gradient(170deg, #793947 0%, #955839 25%, #B1762B 50%, #CC951D 75%, #E8B30F 100%); */
   background: linear-gradient(to right, #793947, #E8B30F, #793947);
   background-size: 300% 100%;
   -moz-transition: all 0.4s ease-in-out;
@@ -382,7 +337,6 @@ Loader */
 }
 
 .text-gradient {
-  /* background: linear-gradient(to bottom right, #793947 0%, #793947 25%, #000 50%, #e8b30f 75% #e8b30f 100%); */
   background: linear-gradient(to right, #793947, #E8B30F, #793947);
   background-clip: text;
   -webkit-background-clip: text;
@@ -469,87 +423,6 @@ Loader */
   }
 }
 
-.lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* Stilovi za grid kontejner */
-.grid-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 400px; /* Možete postaviti visinu koju želite */
-  /* grid-auto-columns: 400px; */
-  gap: 10px;
-}
-
-@media screen and (max-width: 1024px) {
-  .grid-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .grid-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Stilovi za div koji sadrži slike */
-.image-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Stilovi za slike */
-.image-container img, .image-container div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.grid-gallery .outer:hover {
-  cursor: zoom-in;
-}
-
-.grid-gallery .outer:hover img {
-  transform: scale(1.1);
-}
-
-/* Stilovi za proširenu sliku */
 .expanded-image-container {
   position: fixed;
   top: 0;
@@ -577,10 +450,6 @@ Loader */
   border: 5px solid white;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
 }
-
-
-
-
 
 .lds-default {
   display: inline-block;

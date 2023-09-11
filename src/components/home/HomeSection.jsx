@@ -7,6 +7,7 @@ import { Parallax } from "react-scroll-parallax";
 
 const HomeSection = () => {
   const { language } = useContext(Context);
+  
   return (
     <div className="2xl:mx-48 3xl:mx-80 px-4">
       <h3 className="text-3xl text-center text-third pt-24">

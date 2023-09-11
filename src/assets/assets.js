@@ -1,10 +1,5 @@
-import logo from "./logo.png";
-import logo1 from "./logo1.png";
 import logoEng from "./logo-eng.png";
 import logoSrb from "./logo-srb.png";
-import logoLight from "./logo-light.png";
-import logoDark from "./logo-dark.png";
-import parallax from "./parallax.png";
 import architect from "./homecards/architect.png";
 import bigben from "./homecards/big-ben.png";
 import house from "./homecards/house.png";
@@ -24,7 +19,6 @@ import noviDorcol3 from "./realestete/novi-dorcol/novi-dorcol3.jpg";
 import ablok from "./realestete/ablok/ablok.jpg";
 import ablok2 from "./realestete/ablok/ablok2.jpg";
 import ablok3 from "./realestete/ablok/ablok3.jpg";
-import apartmentsBg from "./apartments-bg.jpg";
 import apartment1 from "./apartments/apartment.jpg";
 import apartment2 from "./apartments/apartment2.jpeg";
 import apartment3 from "./apartments/apartment3.jpg";
@@ -63,20 +57,14 @@ import gallery24 from "./gallery/fasade/gallery24.avif";
 import new1 from "./new/new1.avif";
 import new2 from "./new/new2.avif";
 import new3 from "./new/new3.avif";
-import kontakt1 from './kontakt/office.png'
 import kontakt2 from './kontakt/map.png'
 import kontakt3 from './kontakt/telephone.png'
 import kontakt4 from './kontakt/gmail.png'
 import kontakt5 from './kontakt/outgoing-call.png'
 
 export {
-  logo,
-  logo1,
   logoSrb,
   logoEng,
-  parallax,
-  logoLight,
-  logoDark,
   architect,
   bigben,
   house,
@@ -96,7 +84,6 @@ export {
   ablok,
   ablok2,
   ablok3,
-  apartmentsBg,
   apartment1,
   apartment2,
   apartment3,
@@ -135,7 +122,6 @@ export {
   new1,
   new2,
   new3,
-  kontakt1,
   kontakt2,
   kontakt3,
   kontakt4,

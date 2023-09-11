@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import {Helmet} from "react-helmet";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -86,6 +87,15 @@ const Galerija = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Galerija</title>
+        <meta
+          name="description"
+          content="Pouzdani partner u svetu građevinarstva"
+        />
+        <link rel="canonical" href="https://fides.rs/galerija" />
+      </Helmet>
       <div className="py-32 mx-2 2xl:mx-48 3xl:mx-80 ">
         <Swiper
           freeMode={true}
@@ -113,7 +123,7 @@ const Galerija = () => {
           }}
         >
           {grubo.map((slika, index) => (
-            <SwiperSlide key={index} className="rounded-2xl h-[300px] xl:h-[400px] w-full" onClick={() => handleImageClick(slika)}>
+            <SwiperSlide key={index} className="rounded-2xl h-[300px] xl:h-[400px] w-full group" onClick={() => handleImageClick(slika)}>
               <img src={slika} alt={index}  className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full" />
             </SwiperSlide>
           ))}

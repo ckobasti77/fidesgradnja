@@ -10,6 +10,5 @@ export {
     Onama,
     Galerija,
     Nekretnine,
-    Kontakt,
-    
+    Kontakt,  
 }

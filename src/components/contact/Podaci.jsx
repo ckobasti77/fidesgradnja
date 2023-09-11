@@ -1,14 +1,11 @@
 import React, { useContext } from "react";
 import Context from "../../context/Context";
 import {
-  kontakt1,
   kontakt2,
   kontakt3,
   kontakt4,
   kontakt5,
 } from "../../assets/assets";
-import { BsArrowDownShort } from "react-icons/bs";
-import languages from "../../languages";
 
 const cards = [
   {

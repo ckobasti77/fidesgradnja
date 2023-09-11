@@ -9,7 +9,7 @@ import {
   Social,
   Language,
 } from "../components";
-import { logo, logoLight, logoEng, logoSrb } from "../../assets/assets";
+import { logoEng, logoSrb } from "../../assets/assets";
 
 
 const Navbar = ({ scrollToTop }) => {

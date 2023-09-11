@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Context from "../../context/Context";
 import { Link, useLocation } from "react-router-dom";
-import { Social, Language } from "../components";
+import { Social } from "../components";
 
 import languages from "../../languages";
 
@@ -13,14 +13,12 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
   const lastSegment = pathSegments[pathSegments.length - 1];
 
   function disableScroll() {
-    // Get the current page scroll position
     scrollTop = window.scrollY || document.documentElement.scrollTop;
     scrollLeft = window.scrollX || document.documentElement.scrollLeft,
 
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
+    window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+    };
 }
 
   return (

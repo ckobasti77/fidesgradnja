@@ -1,10 +1,10 @@
-import React, { useState, useCallback, useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Context from "../../context/Context";
 
 import languages from "../../languages";
 
-const Navlinks = ({ showNav, scrollToTop }) => {
+const Navlinks = ({ scrollToTop }) => {
   const { language } = useContext(Context);
 
   const location = useLocation();

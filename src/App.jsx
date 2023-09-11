@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { SharedLayout, Loader } from "./components/components";
+import { SharedLayout } from "./components/components";
 import { Home, Onama, Galerija, Nekretnine, Kontakt } from "./pages/pages";
 import { BsChevronBarUp } from "react-icons/bs";
 
@@ -50,7 +50,7 @@ function App() {
           <Route path="/galerija" element={<Galerija />} />
           <Route
             path="/nekretnine"
-            element={<Nekretnine scrollToTop={scrollToTop} />}
+            element={<Nekretnine />}
           />
           <Route path="/kontakt" element={<Kontakt />} />
         </Route>

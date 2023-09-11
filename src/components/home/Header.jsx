@@ -1,12 +1,11 @@
-import { parallax } from "../../assets/assets";
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Context from "../../context/Context";
 import { Link } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
 import languages from "../../languages";
 
 const Header = () => {
-  const { language, setLanguage } = useContext(Context);
+  const { language } = useContext(Context);
 
   return (
     <div className="min-h-screen text-third overflow-hidden">
@@ -22,7 +21,7 @@ const Header = () => {
               className="mb-5 text-5xl font-bold text-third"
               data-aos="fade-up"
               data-aos-once
-              data-aos-delay="1100"
+              data-aos-delay="400"
             >
               {language === "SRB"
                 ? `${languages.pocetna.header.headline.classic}`
@@ -31,7 +30,7 @@ const Header = () => {
                 className="text-gradient bg-gradient-to-br from-secondary to-primary"
                 data-aos="fade-up"
                 data-aos-once
-                data-aos-delay="1500"
+                data-aos-delay="800"
               >
                 {language === "SRB"
                   ? `${languages.pocetna.header.headline.gradient}`
@@ -42,7 +41,7 @@ const Header = () => {
               className="mb-5 text-3xl px-5 font-bold text-third"
               data-aos="fade-up"
               data-aos-once
-              data-aos-delay="1200"
+              data-aos-delay="500"
             >
               {language === "SRB"
                 ? `${languages.pocetna.header.subheadline}`
@@ -67,7 +66,7 @@ const Header = () => {
             href="#homecards"
             className="w-[25px] h-[45px] border-2 rounded-xl cursor-pointer flex justify-center mini-mouse hover:border-primary group"
             data-aos="fade-up"
-            data-aos-delay="1400"
+            data-aos-delay="700"
           >
             <div className="bg-white rounded-full w-[5px] h-[8px] mt-2 mini-mouse-scroll group-hover:bg-primary"></div>
           </a>

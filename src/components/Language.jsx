@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Context from "../context/Context";
 import { BiWorld } from "react-icons/bi";
 import { srb, eng } from "../assets/assets";

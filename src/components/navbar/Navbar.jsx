@@ -54,8 +54,8 @@ const Navbar = ({ scrollToTop }) => {
           <Link to="/" className="font-bold" onClick={scrollToTop}>
             {
               language === 'SRB'
-              ? <img src={logoSrb} alt="logo" className={`cursor-pointer max-h-[100px] transform scale-[.5]`} />
-              : <img src={logoEng} alt="logo" className={`cursor-pointer max-h-[100px] transform scale-[.5]`} />
+              ? <img src={logoSrb} alt="logo" className={`cursor-pointer`} />
+              : <img src={logoEng} alt="logo" className={`cursor-pointer`} />
             }
           </Link>
         </div>

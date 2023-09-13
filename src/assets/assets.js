@@ -1,5 +1,5 @@
-import logoEng from "./logo-eng.png";
-import logoSrb from "./logo-srb.png";
+import logoEng from "./logo-eng.svg";
+import logoSrb from "./logo-srb.svg";
 import architect from "./homecards/architect.png";
 import bigben from "./homecards/big-ben.png";
 import house from "./homecards/house.png";

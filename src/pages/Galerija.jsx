@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import { FreeMode } from "swiper";
+import { Navigation } from "swiper";
 
 import {
   gallery1,
@@ -65,7 +65,6 @@ const fasade = [
   gallery24,
 ];
 
-
 const Galerija = () => {
   const [expandedImage, setExpandedImage] = useState(null);
 
@@ -96,72 +95,95 @@ const Galerija = () => {
         />
         <link rel="canonical" href="https://fides.rs/galerija" />
       </Helmet>
-      <div className="py-32 mx-2 2xl:mx-48 3xl:mx-80 ">
+      <div className="py-32 mx-4 2xl:mx-48 3xl:mx-80">
         <Swiper
-          freeMode={true}
-          grabCursor={true}
-          modules={[FreeMode]}
-          slidesPerView={3.5}
+          navigation={true}
+          // freeMode={true}
+          // grabCursor={true}
+          modules={[Navigation]}
+          slidesPerView={2.5}
           spaceBetween={30}
           className="mySwiper cursor-grab mb-24"
           breakpoints={{
             1920: {
-                slidesPerView: 4.5
+              slidesPerView: 3.5,
             },
             1500: {
-                slidesPerView: 3.5
+              slidesPerView: 2.5,
             },
             1024: {
-                slidesPerView: 2.5
+              slidesPerView: 2.5,
             },
             768: {
-                slidesPerView: 2.5
+              slidesPerView: 1.5,
             },
             320: {
-                slidesPerView: 1.5
-            }
+              slidesPerView: 1.5,
+            },
           }}
         >
           {grubo.map((slika, index) => (
-            <SwiperSlide key={index} className="rounded-2xl h-[300px] xl:h-[400px] w-full group" onClick={() => handleImageClick(slika)}>
-              <img src={slika} alt={index}  className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full" />
+            <SwiperSlide
+              key={index}
+              className="rounded-2xl h-[300px] xl:h-[500px] w-full group"
+              onClick={() => handleImageClick(slika)}
+            >
+              <img
+                src={slika}
+                alt={index}
+                loading="lazy"
+                className="rounded-2xl h-[300px] xl:h-[500px] object-cover w-full"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
         <Swiper
-          freeMode={true}
-          grabCursor={true}
-          modules={[FreeMode]}
-          slidesPerView={3.5}
+          navigation={true}
+          // freeMode={true}
+          // grabCursor={true}
+          modules={[Navigation]}
+          slidesPerView={2.5}
           spaceBetween={30}
-          className="mySwiper cursor-grab my-24"
+          className="mySwiper cursor-grab mb-24"
           breakpoints={{
             1920: {
-                slidesPerView: 4.5
+              slidesPerView: 3.5,
             },
             1500: {
-                slidesPerView: 3.5
+              slidesPerView: 2.5,
             },
             1024: {
-                slidesPerView: 2.5
+              slidesPerView: 2.5,
             },
             768: {
-                slidesPerView: 2.5
+              slidesPerView: 1.5,
             },
             320: {
-                slidesPerView: 1.5
-            }
+              slidesPerView: 1.5,
+            },
           }}
         >
           {fasade.map((slika, index) => (
-            <SwiperSlide key={index} className="rounded-2xl h-[300px] xl:h-[400px] w-full" onClick={() => handleImageClick(slika)}>
-              <img src={slika} alt={index}  className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full" />
+            <SwiperSlide
+              key={index}
+              className="rounded-2xl h-[300px] xl:h-[400px] w-full"
+              onClick={() => handleImageClick(slika)}
+            >
+              <img
+                src={slika}
+                alt={index}
+                loading="lazy"
+                className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
       {expandedImage && (
-        <div className="expanded-image-container active" onClick={handleCloseClick}>
+        <div
+          className="expanded-image-container active"
+          onClick={handleCloseClick}
+        >
           <img src={expandedImage} alt="Expanded" />
         </div>
       )}

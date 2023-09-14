@@ -35,7 +35,7 @@ const New = () => {
     },
   ];
   return (
-    <div className="space-y-6 py-32 2xl:px-48 3xl:px-80 text-third">
+    <div id="noviprojekat" className="space-y-6 py-32 mx-4 2xl:mx-48 3xl:mx-80 text-third">
       <h2 className="text-center text-4xl mb-24">
         {language === "SRB"
           ? `${languages.novi.headline}`
@@ -50,6 +50,7 @@ const New = () => {
         >
           <img
             src={section.img}
+            loading="lazy"
             alt="homesection"
             className="relative rounded-2xl max-h-[512px] object-cover w-[750px]"
             data-aos="fade-up"

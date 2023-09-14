@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import Context from "../context/Context";
-import { BiWorld } from "react-icons/bi";
-import { srb, eng } from "../assets/assets";
 
-const Language = ({ classSingle }) => {
+const Language = () => {
   const { language, setLanguage } = useContext(Context);
 
   return (
@@ -22,14 +20,12 @@ const Language = ({ classSingle }) => {
       </label>
       <ul
         tabIndex={0}
-        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-20 -translate-x-[43.5px] xl:-translate-x-[28px] translate-y-1"
+        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-20 -translate-x-[49px] xl:-translate-x-[29px] translate-y-1"
       >
-        <li onClick={() => setLanguage("SRB")} className="grid place-items-center">
-          {/* <a aria-label="Set language"><img src={srb} alt="srb" /></a> */}
+        <li onClick={() => setLanguage("SRB")} className="grid place-items-center mb-[2px]">
           <span className="fi fi-rs"></span>
         </li>
         <li onClick={() => setLanguage("ENG")} className="grid place-items-center">
-          {/* <a aria-label="Set language"><img src={eng} alt="eng" /></a> */}
           <span className="fi fi-gb"></span>
         </li>
       </ul>

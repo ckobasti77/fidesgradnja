@@ -1,6 +1,6 @@
-import React from 'react'
-import { Realestate } from '../components/components'
-import {Helmet} from "react-helmet";
+import React from "react";
+import { Realestate } from "../components/components";
+import { Helmet } from "react-helmet";
 
 const Nekretnine = () => {
   return (
@@ -16,7 +16,7 @@ const Nekretnine = () => {
       </Helmet>
       <Realestate />
     </>
-  )
-}
+  );
+};
 
-export default Nekretnine
+export default Nekretnine;

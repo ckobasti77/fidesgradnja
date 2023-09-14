@@ -35,7 +35,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="space-y-6 xl:-space-y-32 py-32 2xl:px-48 3xl:px-80 text-third">
+    <div className="space-y-6 xl:-space-y-32 py-32 mx-4 2xl:mx-48 3xl:mx-80 text-third">
       {sections.map((section, key) => (
         <div
           key={key}
@@ -46,6 +46,7 @@ const AboutUs = () => {
         >
           <img
             src={section.img}
+            loading="lazy"
             alt="homesection"
             className="relative rounded-full max-h-[512px] object-cover w-96"
             data-aos="fade-up"

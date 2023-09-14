@@ -1,6 +1,6 @@
 import React from "react";
 import { Map, Podaci } from "../components/components";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const Kontakt = () => {
   return (

@@ -18,7 +18,7 @@ const Header = () => {
         <div className="hero-content p-0 text-center text-neutral-content">
           <div className="space-y-8">
             <h1
-              className="mb-5 text-5xl font-bold text-third"
+              className="uppercase mb-5 text-5xl font-bold text-third"
               data-aos="fade-up"
               data-aos-once
               data-aos-delay="400"
@@ -38,7 +38,7 @@ const Header = () => {
               </span>
             </h1>
             <h2
-              className="mb-5 text-3xl px-5 font-bold text-third"
+              className="uppercase mb-5 text-2xl px-5 font-bold text-third"
               data-aos="fade-up"
               data-aos-once
               data-aos-delay="500"

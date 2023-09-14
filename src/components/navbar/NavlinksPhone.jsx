@@ -29,7 +29,7 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
       }`}
     >
       <Link
-        className={`${lastSegment === "" ? "text-primary" : "text-third"}`}
+        className={`${lastSegment === "" ? "text-primary" : "text-third"} uppercase text-[.9rem] `}
         to="/"
         onClick={() => {
           setNavOpen(false)
@@ -41,7 +41,7 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
           : `${languages.navbar.links.first}`}
       </Link>
       <Link
-        className={`${lastSegment === "onama" ? "text-primary" : "text-third"}`}
+        className={`${lastSegment === "onama" ? "text-primary" : "text-third"} uppercase text-[.9rem] `}
         to="/onama"
         onClick={() => {
           setNavOpen(false)
@@ -53,7 +53,7 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
           : `${languages.navbar.links.second}`}
       </Link>
       <Link
-        className={`${lastSegment === "galerija" ? "text-primary" : "text-third"}`}
+        className={`${lastSegment === "galerija" ? "text-primary" : "text-third"} uppercase text-[.9rem] `}
         to="/galerija"
         onClick={() => {
           setNavOpen(false)
@@ -65,7 +65,7 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
           : `${languages.navbar.links.third}`}
       </Link>
       <Link
-        className={`${lastSegment === "nekretnine" ? "text-primary" : "text-third"}`}
+        className={`${lastSegment === "nekretnine" ? "text-primary" : "text-third"} uppercase text-[.9rem] `}
         to="/nekretnine"
         onClick={() => {
           setNavOpen(false)
@@ -77,7 +77,7 @@ const NavlinksPhone = ({ scrollToTop, navOpen, setNavOpen }) => {
           : `${languages.navbar.links.fourth}`}
       </Link>
       <Link
-        className={`${lastSegment === "kontakt" ? "text-primary" : "text-third"}`}
+        className={`${lastSegment === "kontakt" ? "text-primary" : "text-third"} uppercase text-[.9rem] `}
         to="/kontakt"
         onClick={() => {
           setNavOpen(false)

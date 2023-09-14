@@ -3,14 +3,13 @@ import Context from "../../context/Context";
 import { homeSection, homeSectionIcon } from "../../assets/assets";
 import { Link } from "react-router-dom";
 import languages from "../../languages";
-import { Parallax } from "react-scroll-parallax";
 
 const HomeSection = () => {
   const { language } = useContext(Context);
   
   return (
-    <div className="2xl:mx-48 3xl:mx-80 px-4">
-      <h3 className="text-3xl text-center text-third pt-24">
+    <div className="mx-4 2xl:mx-48 3xl:mx-80">
+      <h3 className="uppercase text-2xl text-center text-third pt-24">
         {language === "SRB"
           ? `${languages.pocetna.secondSection.heading}`
           : `${languages.home.secondSection.heading}`}
@@ -23,6 +22,7 @@ const HomeSection = () => {
           <img
             src={homeSection}
             alt="homesection"
+            loading="lazy"
             className="relative rounded-full object-cover"
             data-aos="fade-up"
             data-aos-delay="200"
@@ -35,8 +35,8 @@ const HomeSection = () => {
             data-aos-delay="600"
           >
             <span className=" inline-flex flex-col items-center justify-between bg-fifth rounded-full p-8 w-full h-full text-sm font-semibold">
-              <img src={homeSectionIcon} alt="homeSectionIcon" />
-              <span className="whitespace-nowrap text-third">
+              <img src={homeSectionIcon} alt="homeSectionIcon" loading="lazy" />
+              <span className="uppercase whitespace-nowrap text-third">
                 {language === "SRB"
                   ? `${languages.pocetna.secondSection.absolute}`
                   : `${languages.home.secondSection.absolute}`}
@@ -50,7 +50,7 @@ const HomeSection = () => {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <p className="bg-fifth rounded-2xl p-6 font-[600]">
+            <p className="uppercase bg-fifth rounded-2xl p-6 font-[600]">
               {language === "SRB"
                 ? `${languages.pocetna.secondSection.paragraph2}`
                 : `${languages.home.secondSection.paragraph2}`}

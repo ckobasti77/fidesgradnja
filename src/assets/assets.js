@@ -25,8 +25,6 @@ import apartment3 from "./apartments/apartment3.jpg";
 import apartment4 from "./apartments/apartment4.jpg";
 import apartment5 from "./apartments/apartment5.jpeg";
 import apartment6 from "./apartments/apartment6.jpeg";
-import srb from "./srb.png";
-import eng from "./eng.png";
 import aboutus1 from "./aboutus/aboutus-1.avif";
 import aboutus2 from "./aboutus/aboutus-2.avif";
 import aboutus3 from "./aboutus/aboutus-3.avif";
@@ -90,8 +88,6 @@ export {
   apartment4,
   apartment5,
   apartment6,
-  srb,
-  eng,
   aboutus1,
   aboutus2,
   aboutus3,

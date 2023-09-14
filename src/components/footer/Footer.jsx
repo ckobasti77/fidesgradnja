@@ -3,6 +3,7 @@ import Context from "../../context/Context";
 import { Navlinks } from "../components";
 import { logoSrb, logoEng } from "../../assets/assets";
 import { Link } from "react-router-dom";
+import { ReactSVG } from "react-svg";
 
 const Footer = ({ scrollToTop }) => {
   const { language } = useContext(Context);
@@ -15,19 +16,11 @@ const Footer = ({ scrollToTop }) => {
         data-aos-delay="700"
       >
         <Link to="/" className="font-bold" onClick={scrollToTop}>
-          {language === "SRB" ? (
-            <img
-              src={logoSrb}
-              alt="logo"
-              className={`cursor-pointer max-h-[100px] transform scale-[.67]`}
-            />
-          ) : (
-            <img
-              src={logoEng}
-              alt="logo"
-              className={`cursor-pointer max-h-[100px] transform scale-[.67]`}
-            />
-          )}
+            {
+              language === 'SRB'
+              ? <ReactSVG src={logoSrb} />
+              : <ReactSVG src={logoEng} />
+            }
         </Link>
       </div>
       <Navlinks scrollToTop={scrollToTop} />

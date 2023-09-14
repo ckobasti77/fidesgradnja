@@ -52,7 +52,7 @@ const Navbar = ({ scrollToTop }) => {
           data-aos="fade-down"
           data-aos-delay="700"
         >
-          <Link to="/" className="font-bold" onClick={scrollToTop}>
+          <Link to="/" className="font-bold" onClick={scrollToTop} aria-label="Fides">
             {
               language === 'SRB'
               ? <ReactSVG src={logoSrb} />

@@ -146,7 +146,7 @@ const languages = {
         gradient2: "Naša",
         classic2: "realizacija",
       },
-      subheadline: "Neprevaziđen kvalitet i vrednost u svakoj nekretnini",
+      subheadline: "Kvalitet i vrednost u svakoj nekretnini",
       button: "Projekat u izgradnji",
     },
     realestate: {
@@ -179,7 +179,7 @@ const languages = {
         gradient2: "Our",
         classic2: "implementation",
       },
-      subheadline: "Unmatched Quality and Value in Every Property",
+      subheadline: "Quality and Value in Every Property",
       button: "Project under construction",
     },
     realestate: {

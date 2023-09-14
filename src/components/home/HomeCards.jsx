@@ -52,9 +52,9 @@ const HomeCards = () => {
   return (
     <div
       id="homecards"
-      className="2xl:mx-48 3xl:mx-80 px-4 flex space-y-12 2xl:space-y-0 z-20 flex-wrap justify-between min-h-screen items-center"
+      className="mx-4 2xl:mx-48 3xl:mx-80 px-4 flex space-y-12 2xl:space-y-0 z-20 flex-wrap justify-between min-h-screen items-center"
     >
-      <h3 className="text-2xl xl:text-3xl text-center py-24 text-third tracking-wider">
+      <h3 className="uppercase text-xl xl:text-2xl text-center py-24 text-third tracking-wider">
         {language === "SRB"
           ? `${languages.pocetna.firstSection.heading}`
           : `${languages.home.firstSection.heading}`}
@@ -74,11 +74,11 @@ const HomeCards = () => {
                 data-aos-delay={card.delay * 1.5}
               >
                 <span className="inline-flex items-center justify-center bg-fourth rounded-full p-2 w-full h-full text-sm font-semibold text-gray-700">
-                  <img src={card.icon} alt="icon" />
+                  <img src={card.icon} alt="icon" loading="lazy" />
                 </span>
               </div>
               <div
-                className="font-bold text-xl mb-2 text-center text-third mx-auto"
+                className="uppercase font-bold text-l mb-2 text-center text-third mx-auto"
                 data-aos="fade-up"
                 data-aos-delay={card.delay * 2}
               >
@@ -90,7 +90,7 @@ const HomeCards = () => {
               data-aos-once
               data-aos-delay={card.delay * 2.5}
             >
-              <p className="text-third rounded-[11.5px] text-base text-center bg-fifth min-h-[150px]">
+              <p className="uppercase text-third rounded-[11.5px] font-medium leading-6 text-[.75rem] text-center bg-fifth min-h-[150px]">
                 {card.text}
               </p>
             </div>

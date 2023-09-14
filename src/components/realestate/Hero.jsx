@@ -1,7 +1,6 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Context from "../../context/Context";
 import languages from "../../languages";
-import { BsArrowDownShort } from "react-icons/bs";
 
 const Hero = () => {
   const { language } = useContext(Context);
@@ -54,7 +53,7 @@ const Hero = () => {
                   ? `${languages.nekretnine.hero.subheadline}`
                   : `${languages.realestate.hero.subheadline}`}
               </h2>
-              <div data-aos="fade-up" data-aos-delay="800">
+              {/* <div data-aos="fade-up" data-aos-delay="800">
                 <a
                   href="#nekretnine"
                   className="btn p-[3px] transform hover:scale-[1.02] arrow-down-group"
@@ -66,11 +65,22 @@ const Hero = () => {
                     <BsArrowDownShort size={20} className="arrow-down" />
                   </span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
+      <div className="absolute bottom-3 flex left-0 right-0 justify-center">
+          <a
+            href="#noviprojekat"
+            aria-label="Novi projekat"
+            className="w-[25px] h-[45px] border-2 rounded-xl cursor-pointer flex justify-center mini-mouse hover:border-primary group"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div className="bg-white rounded-full w-[5px] h-[8px] mt-2 mini-mouse-scroll group-hover:bg-primary"></div>
+          </a>
+        </div>
     </div>
   );
 };

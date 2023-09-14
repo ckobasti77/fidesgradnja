@@ -3,7 +3,7 @@ import React from "react";
 const Map = () => {
   return (
     <div
-      className="z-10 rounded-2xl py-6 xl:py-28 2xl:mx-48 3xl:mx-80 "
+      className="z-10 rounded-2xl py-6 xl:py-28 mx-4 2xl:mx-48 3xl:mx-80"
       data-aos="fade-up"
       data-aos-delay="100"
       id="mapa"

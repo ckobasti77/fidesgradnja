@@ -15,7 +15,7 @@ const Navlinks = ({ scrollToTop }) => {
     <>
       <div className={`navlinks gap-6 hidden xl:flex bg-transparent font-normal tracking-wide`}>
         <Link
-          className={`hover:text-primary duration-100 offset ${lastSegment === '' ? 'text-primary' : 'text-third'} transition-all delay-[.1s] duration-50 ease-in-out transform`}
+          className={`uppercase text-[.9rem] hover:text-primary duration-100 offset ${lastSegment === '' ? 'text-primary' : 'text-third'} transition-all delay-[.1s] duration-50 ease-in-out transform`}
           to="/"
           data-aos="fade-down"
           data-aos-delay="100"
@@ -26,7 +26,7 @@ const Navlinks = ({ scrollToTop }) => {
         </Link>
 
         <Link
-          className={`hover:text-primary duration-100 ${lastSegment === 'onama' ? 'text-primary' : 'text-third'} transition-all delay-[.2s] duration-50 ease-in-out transform`}
+          className={`uppercase text-[.9rem] hover:text-primary duration-100 ${lastSegment === 'onama' ? 'text-primary' : 'text-third'} transition-all delay-[.2s] duration-50 ease-in-out transform`}
           to="/onama"
           data-aos="fade-down"
           data-aos-delay="200"
@@ -36,7 +36,7 @@ const Navlinks = ({ scrollToTop }) => {
           {language === 'SRB' ? `${languages.navigacija.links.second}` : `${languages.navbar.links.second}`}
         </Link>
         <Link
-          className={`hover:text-primary duration-100 ${lastSegment === 'galerija' ? 'text-primary' : 'text-third'} transition-all delay-[.3s] duration-50 ease-in-out transform`}
+          className={`uppercase text-[.9rem] hover:text-primary duration-100 ${lastSegment === 'galerija' ? 'text-primary' : 'text-third'} transition-all delay-[.3s] duration-50 ease-in-out transform`}
           to="/galerija"
           data-aos="fade-down"
           data-aos-delay="300"
@@ -46,7 +46,7 @@ const Navlinks = ({ scrollToTop }) => {
           {language === 'SRB' ? `${languages.navigacija.links.third}` : `${languages.navbar.links.third}`}
         </Link>
         <Link
-          className={`hover:text-primary duration-100 ${lastSegment === 'nekretnine' ? 'text-primary' : 'text-third'} transition-all delay-[0.4s] duration-50 ease-in-out transform`}
+          className={`uppercase text-[.9rem] hover:text-primary duration-100 ${lastSegment === 'nekretnine' ? 'text-primary' : 'text-third'} transition-all delay-[0.4s] duration-50 ease-in-out transform`}
           to="/nekretnine"
           data-aos="fade-down"
           data-aos-delay="400"
@@ -56,7 +56,7 @@ const Navlinks = ({ scrollToTop }) => {
           {language === 'SRB' ? `${languages.navigacija.links.fourth}` : `${languages.navbar.links.fourth}`}
         </Link>
         <Link
-          className={`hover:text-primary duration-100 ${lastSegment === 'kontakt' ? 'text-primary' : 'text-third'} transition-all delay-[.5s] duration-50 ease-in-out transform`}
+          className={`uppercase text-[.9rem] hover:text-primary duration-100 ${lastSegment === 'kontakt' ? 'text-primary' : 'text-third'} transition-all delay-[.5s] duration-50 ease-in-out transform`}
           to="/kontakt"
           data-aos="fade-down"
           data-aos-delay="500"

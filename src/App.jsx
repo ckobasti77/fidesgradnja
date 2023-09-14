@@ -7,6 +7,8 @@ import { BsChevronBarUp } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+
 function App() {
   Aos.init({
     duration: 400,

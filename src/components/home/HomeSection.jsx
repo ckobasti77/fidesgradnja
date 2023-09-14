@@ -23,9 +23,11 @@ const HomeSection = () => {
           <img
             src={homeSection}
             alt="homesection"
-            className="relative rounded-full h-full object-cover w-96"
+            className="relative rounded-full object-cover"
             data-aos="fade-up"
             data-aos-delay="200"
+            width={384}
+            height={'full'}
           />
           <div
             className="outer w-[170px] h-[170px] absolute -bottom-[2%] -right-0 xl:-right-[10%] rounded-full p-[4px]"

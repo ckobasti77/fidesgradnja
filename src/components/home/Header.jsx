@@ -64,6 +64,7 @@ const Header = () => {
         <div className="absolute bottom-3 flex justify-center">
           <a
             href="#homecards"
+            aria-label="Read more"
             className="w-[25px] h-[45px] border-2 rounded-xl cursor-pointer flex justify-center mini-mouse hover:border-primary group"
             data-aos="fade-up"
             data-aos-delay="700"

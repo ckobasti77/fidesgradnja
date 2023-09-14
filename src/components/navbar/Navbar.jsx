@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useContext } from "react";
 import Context from "../../context/Context";
 import { Link } from "react-router-dom";
+import { ReactSVG } from 'react-svg'
 
 import {
   Navlinks,
@@ -54,8 +55,8 @@ const Navbar = ({ scrollToTop }) => {
           <Link to="/" className="font-bold" onClick={scrollToTop}>
             {
               language === 'SRB'
-              ? <img src={logoSrb} alt="logo" className={`cursor-pointer`} />
-              : <img src={logoEng} alt="logo" className={`cursor-pointer`} />
+              ? <ReactSVG src={logoSrb} />
+              : <ReactSVG src={logoEng} />
             }
           </Link>
         </div>

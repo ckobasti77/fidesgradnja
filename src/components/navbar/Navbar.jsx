@@ -36,6 +36,7 @@ const Navbar = ({ scrollToTop }) => {
     setNavOpen((prev) => !prev);
   }, []);
 
+
   return (
     <nav
       className={`navbar fixed top-0 w-screen h-[105px] bg-transparent flex items-center rounded-b-2xl px-4 text-white transition-transform z-[2] duration-300 ease-in-out ${

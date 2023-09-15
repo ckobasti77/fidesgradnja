@@ -15,7 +15,7 @@ const Footer = ({ scrollToTop }) => {
         data-aos="fade-down"
         data-aos-delay="700"
       >
-        <Link to="/" className="font-bold" onClick={scrollToTop}>
+        <Link to="/" className="font-bold" onClick={scrollToTop} aria-label="Fides Logo">
             {
               language === 'SRB'
               ? <ReactSVG src={logoSrb} />

@@ -6,25 +6,7 @@ import house from "./homecards/house.png";
 import partnership from "./homecards/partnership.png";
 import homeSection from "./home-section.avif";
 import homeSectionIcon from "./home-section-icon.png";
-import beogradNaVodi from "./realestete/beograd-na-vodi.jpg";
-import vozdoveKapije from "./realestete//vozdove-kapije/vozdove-kapije.jpg";
-import vozdoveKapije2 from "./realestete//vozdove-kapije/vozdove-kapije2.jpeg";
-import vozdoveKapije3 from "./realestete//vozdove-kapije/vozdove-kapije3.jpg";
-import sunnyville from "./realestete/sunnyville/sunnyville.jpg";
-import sunnyville2 from "./realestete/sunnyville/sunnyville2.jpg";
-import sunnyville3 from "./realestete/sunnyville/sunnyville3.jpg";
-import noviDorcol from "./realestete/novi-dorcol/novi-dorcol.jpg";
-import noviDorcol2 from "./realestete/novi-dorcol/novi-dorcol2.jpeg";
-import noviDorcol3 from "./realestete/novi-dorcol/novi-dorcol3.jpg";
-import ablok from "./realestete/ablok/ablok.jpg";
-import ablok2 from "./realestete/ablok/ablok2.jpg";
-import ablok3 from "./realestete/ablok/ablok3.jpg";
-import apartment1 from "./apartments/apartment.jpg";
-import apartment2 from "./apartments/apartment2.jpeg";
-import apartment3 from "./apartments/apartment3.jpg";
-import apartment4 from "./apartments/apartment4.jpg";
-import apartment5 from "./apartments/apartment5.jpeg";
-import apartment6 from "./apartments/apartment6.jpeg";
+
 import aboutus1 from "./aboutus/aboutus-1.avif";
 import aboutus2 from "./aboutus/aboutus-2.avif";
 import aboutus3 from "./aboutus/aboutus-3.avif";
@@ -69,25 +51,6 @@ export {
   partnership,
   homeSection,
   homeSectionIcon,
-  beogradNaVodi,
-  vozdoveKapije,
-  vozdoveKapije2,
-  vozdoveKapije3,
-  sunnyville,
-  sunnyville2,
-  sunnyville3,
-  noviDorcol,
-  noviDorcol2,
-  noviDorcol3,
-  ablok,
-  ablok2,
-  ablok3,
-  apartment1,
-  apartment2,
-  apartment3,
-  apartment4,
-  apartment5,
-  apartment6,
   aboutus1,
   aboutus2,
   aboutus3,

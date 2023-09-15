@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import Context from "../../context/Context";
+import React from "react";
 import {
   kontakt2,
   kontakt3,
@@ -29,7 +28,6 @@ const cards = [
 ];
 
 const Podaci = () => {
-  const { language } = useContext(Context);
 
   return (
     <div className="mx-4 2xl:mx-48 3xl:mx-80 h-auto grid place-items-center pt-32 text-third">
@@ -53,7 +51,7 @@ const Podaci = () => {
             >
               <p>011/369-50-70</p>
               <span>
-                <img src={kontakt5} alt="call" className="inline" loading="lazy" />
+                <img src={kontakt5} alt="call" className="inline" loading="lazy" width={24} height={24} />
               </span>
             </a>
             <a
@@ -62,7 +60,7 @@ const Podaci = () => {
             >
               <p>011/369-50-71</p>
               <span>
-                <img src={kontakt5} alt="call" className="inline" loading="lazy" />
+                <img src={kontakt5} alt="call" className="inline" loading="lazy" width={24} height={24} />
               </span>
             </a>
             <a
@@ -71,7 +69,7 @@ const Podaci = () => {
             >
               <p>011/406-84-32</p>
               <span>
-                <img src={kontakt5} alt="call" className="inline" loading="lazy" />
+                <img src={kontakt5} alt="call" className="inline" loading="lazy" width={24} height={24} />
               </span>
             </a>
           </div>

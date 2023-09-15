@@ -27,7 +27,7 @@ const HomeSection = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             width={384}
-            height={'full'}
+            height={480}
           />
           <div
             className="outer w-[170px] h-[170px] absolute -bottom-[2%] -right-0 xl:-right-[10%] rounded-full p-[4px]"
@@ -35,7 +35,7 @@ const HomeSection = () => {
             data-aos-delay="600"
           >
             <span className=" inline-flex flex-col items-center justify-between bg-fifth rounded-full p-8 w-full h-full text-sm font-semibold">
-              <img src={homeSectionIcon} alt="homeSectionIcon" loading="lazy" />
+              <img src={homeSectionIcon} alt="homeSectionIcon" loading="lazy" width={64} height={64} />
               <span className="uppercase whitespace-nowrap text-third">
                 {language === "SRB"
                   ? `${languages.pocetna.secondSection.absolute}`

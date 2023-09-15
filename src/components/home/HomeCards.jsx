@@ -74,7 +74,7 @@ const HomeCards = () => {
                 data-aos-delay={card.delay * 1.5}
               >
                 <span className="inline-flex items-center justify-center bg-fourth rounded-full p-2 w-full h-full text-sm font-semibold text-gray-700">
-                  <img src={card.icon} alt="icon" loading="lazy" />
+                  <img src={card.icon} alt="icon" loading="lazy" width={64} height={64} />
                 </span>
               </div>
               <div

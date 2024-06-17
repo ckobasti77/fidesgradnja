@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useContext } from "react";
 import Context from "../../context/Context";
 import { Link } from "react-router-dom";
-import { ReactSVG } from 'react-svg'
+import { ReactSVG } from "react-svg";
 
 import {
   Navlinks,
@@ -12,16 +12,15 @@ import {
 } from "../components";
 import { logoEng, logoSrb } from "../../assets/assets";
 
-
 const Navbar = ({ scrollToTop }) => {
-  const { language } = useContext(Context)
+  const { language } = useContext(Context);
   const [showNav, setShowNav] = useState(true);
   const [navOpen, setNavOpen] = useState(false);
   const [scrollPos, setScrollPos] = useState(0);
 
   useEffect(() => {
     const onScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       const visible = scrollPos > currentScrollPos;
       setScrollPos(currentScrollPos);
       setShowNav(visible);
@@ -31,11 +30,9 @@ const Navbar = ({ scrollToTop }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollPos]);
 
-
   const toggleNav = useCallback(() => {
     setNavOpen((prev) => !prev);
   }, []);
-
 
   return (
     <nav
@@ -53,24 +50,33 @@ const Navbar = ({ scrollToTop }) => {
           data-aos="fade-down"
           data-aos-delay="700"
         >
-          <Link to="/" className="font-bold" onClick={scrollToTop} aria-label="Fides">
-            {
-              language === 'SRB'
-              ? <ReactSVG src={logoSrb} />
-              : <ReactSVG src={logoEng} />
-            }
+          <Link
+            to="/"
+            className="font-bold"
+            onClick={scrollToTop}
+            aria-label="Fides"
+          >
+            {language === "SRB" ? (
+              <ReactSVG src={logoSrb} />
+            ) : (
+              <ReactSVG src={logoEng} />
+            )}
           </Link>
         </div>
         <div className="block xl:hidden">
           <Language />
         </div>
         <div className="xl:w-5/12 hidden xl:flex items-center gap-4 justify-end">
-          <Language classSingle='translate-y-[0px]' />
+          <Language classSingle="translate-y-[0px]" />
           <Social />
         </div>
         <Burger navOpen={navOpen} toggleNav={toggleNav} />
       </div>
-      <NavlinksPhone navOpen={navOpen} setNavOpen={setNavOpen} scrollToTop={scrollToTop} />
+      <NavlinksPhone
+        navOpen={navOpen}
+        setNavOpen={setNavOpen}
+        scrollToTop={scrollToTop}
+      />
     </nav>
   );
 };

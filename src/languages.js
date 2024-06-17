@@ -50,7 +50,7 @@ const languages = {
     },
     secondSection: {
       heading:
-        "Naš tim je sinonim za profesionalizam i stručnost u građevinskoj industriji. Godinama, stvaramo inspirativne prostore za život, rad i igru, koji su prilagođeni svim zahtevima i specifičnostima tržišta.",
+        "Naš tim je sinonim za profesionalizam i stručnost u građevinskoj industriji. Godinama stvaramo inspirativne prostore za život, rad i igru, koji su prilagođeni svim zahtevima i specifičnostima tržišta.",
       absolute: "100+ projekata",
       
       paragraph2:
@@ -90,7 +90,7 @@ const languages = {
     },
     secondSection: {
       heading:
-        "Our team is synonymous with professionalism and expertise in the construction industry. For years, we have been creating inspiring spaces for living, working and playing, which are adapted to all the requirements and specificities of the market.",
+        "Our team is synonymous with professionalism and expertise in the construction industry. For years we have been creating inspiring spaces for living, working and playing, which are adapted to all the requirements and specificities of the market.",
       absolute: "100+ projects",
       paragraph:
         "Our team is synonymous with professionalism and expertise in the construction industry. For years, we have been creating inspiring spaces for living, working and playing, which are adapted to all the requirements and specificities of the market.",

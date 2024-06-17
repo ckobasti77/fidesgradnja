@@ -41,6 +41,8 @@ import kontakt2 from './kontakt/map.png'
 import kontakt3 from './kontakt/telephone.png'
 import kontakt4 from './kontakt/gmail.png'
 import kontakt5 from './kontakt/outgoing-call.png'
+import maximize from './gallery/maximize.png';
+import minimize from './gallery/minimize.png';
 
 export {
   logoSrb,
@@ -85,5 +87,7 @@ export {
   kontakt3,
   kontakt4,
   kontakt5,
-
+  maximize,
+  minimize,
+  
 };

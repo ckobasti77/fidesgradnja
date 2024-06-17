@@ -33,6 +33,8 @@ import {
   gallery22,
   gallery23,
   gallery24,
+  maximize,
+  minimize
 } from "../assets/assets";
 
 const grubo = [
@@ -76,13 +78,7 @@ const Galerija = () => {
     setExpandedImage(null);
   };
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+  const [expand, setExpand] = useState(true);
 
   return (
     <>
@@ -96,29 +92,32 @@ const Galerija = () => {
         <link rel="canonical" href="https://fides.rs/galerija" />
       </Helmet>
       <div className="py-32 mx-4 2xl:mx-48 3xl:mx-80">
+        <div className="flex justify-center items-center space-x-6 my-8">
+          <img src={maximize} alt="maximize" width={30} height={30} />
+          <input type="checkbox" className="toggle toggle-lg" onChange={() => setExpand((prev) => !prev)} />
+          <img src={minimize} alt="minimize" width={30} height={30} />
+        </div>
         <Swiper
           navigation={true}
-          // freeMode={true}
-          // grabCursor={true}
           modules={[Navigation]}
-          slidesPerView={2.5}
+          slidesPerView={expand ? 1 : 2.5}
           spaceBetween={30}
           className="mySwiper cursor-grab mb-24"
           breakpoints={{
             1920: {
-              slidesPerView: 3.5,
+              slidesPerView: expand ? 1 : 3.5,
             },
             1500: {
-              slidesPerView: 2.5,
+              slidesPerView: expand ? 1 : 2.5,
             },
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: expand ? 1 : 2.5,
             },
             768: {
-              slidesPerView: 1.5,
+              slidesPerView: expand ? 1 : 1.5,
             },
             320: {
-              slidesPerView: 1.5,
+              slidesPerView: expand ? 1 : 1.5,
             },
           }}
         >
@@ -139,41 +138,39 @@ const Galerija = () => {
         </Swiper>
         <Swiper
           navigation={true}
-          // freeMode={true}
-          // grabCursor={true}
           modules={[Navigation]}
-          slidesPerView={2.5}
+          slidesPerView={expand ? 1 : 2.5}
           spaceBetween={30}
           className="mySwiper cursor-grab mb-24"
           breakpoints={{
             1920: {
-              slidesPerView: 3.5,
+              slidesPerView: expand ? 1 : 3.5,
             },
             1500: {
-              slidesPerView: 2.5,
+              slidesPerView: expand ? 1 : 2.5,
             },
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: expand ? 1 : 2.5,
             },
             768: {
-              slidesPerView: 1.5,
+              slidesPerView: expand ? 1 : 1.5,
             },
             320: {
-              slidesPerView: 1.5,
+              slidesPerView: expand ? 1 : 1.5,
             },
           }}
         >
           {fasade.map((slika, index) => (
             <SwiperSlide
               key={index}
-              className="rounded-2xl h-[300px] xl:h-[400px] w-full"
+              className="rounded-2xl h-[300px] xl:h-[500px] w-full"
               onClick={() => handleImageClick(slika)}
             >
               <img
                 src={slika}
                 alt={index}
                 loading="lazy"
-                className="rounded-2xl h-[300px] xl:h-[400px] object-cover w-full"
+                className="rounded-2xl h-[300px] xl:h-[500px] object-cover w-full"
               />
             </SwiperSlide>
           ))}

@@ -31,7 +31,7 @@ const Podaci = () => {
 
   return (
     <div className="mx-4 2xl:mx-48 3xl:mx-80 h-auto grid place-items-center pt-32 text-third">
-      <div className="flex justify-between space-y-5 w-full xl:space-x-5 xl:space-y-0 flex-col xl:flex-row my-5 xl:my-12">
+      <div className="flex justify-between space-y-5 w-full xl:space-x-5 xl:space-y-0 flex-col items-center xl:flex-row my-5 xl:my-12">
         <div
           className="outer p-[2.5px] mx-auto sm:mx-0 rounded-[25px] w-[300px] h-[300px] overflow-hidden bg-fourth"
           data-aos="fade-up"

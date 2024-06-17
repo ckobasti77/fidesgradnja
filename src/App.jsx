@@ -65,7 +65,7 @@ function App() {
         }`}
       >
         <button
-          className={`rounded-full bg-fifth scrollToTop w-[50px] h-[50px] grid place-items-center `}
+          className={`rounded-full bg-fifth scrollToTop w-[50px] h-[50px] grid place-items-center`}
           onClick={() => scrollToTop()}
           title="Skroluj do vrha"
         >

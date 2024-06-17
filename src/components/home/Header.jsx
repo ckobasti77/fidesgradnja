@@ -18,7 +18,7 @@ const Header = () => {
         <div className="hero-content p-0 text-center text-neutral-content">
           <div className="space-y-8">
             <h1
-              className="uppercase mb-5 text-5xl font-bold text-third"
+              className="uppercase mb-5 text-3xl xl:text-5xl font-bold text-third"
               data-aos="fade-up"
               data-aos-once
               data-aos-delay="400"
